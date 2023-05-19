@@ -1,0 +1,53 @@
+\documentclass[12pt]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\usepackage{bibunits}
+\usepackage{natbib}
+\modulolinenumbers[5]
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{forloop}% http://ctan.org/pkg/forloop
+
+\journal{Journal Name}
+
+\begin{document}
+
+\input{TitlePage.tex}
+
+\input{ApprovalPage.tex}
+
+\input{DeclarationPage.tex}
+
+\input{CertificatePage.tex}
+
+\input{AcknowledgementPage.tex}
+
+\begin{frontmatter}
+
+\begin{abstract}
+    \input{Sections/Abstract.tex}
+\end{abstract}
+
+\journal{Department of Biotechnology, NIT Warangal}
+
+\end{frontmatter}
+
+\newpage
+
+% insert table of contents, figures, and tables
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+
+\newpage
+
+% \input{Sections/Introduction.tex}
+
+\newpage
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references/references.bib}
+
+\end{document}
